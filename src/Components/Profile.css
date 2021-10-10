@@ -1,0 +1,96 @@
+.cont-user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.user-name {
+  font-size: 30px;
+}
+.user-login {
+  color: var(--color-blue);
+}
+.user-loc {
+  margin-top: 10px;
+  display: flex;
+  gap: 55px;
+}
+
+.user-loc .fas {
+  color: var(--color-blue);
+  margin-right: 10px;
+}
+.img-profile {
+  border-radius: 100%;
+  border: 5px solid var(--color-blue);
+}
+.user-fav {
+  margin-top: 20px;
+  background-color: var(--second-color);
+  display: flex;
+
+  text-align: center;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 400px;
+  height: 50px;
+  border-radius: 7px;
+}
+
+.cont-repos {
+  background-color: var(--second-color);
+  margin-top: 20px;
+  width: 90%;
+  display: flex;
+
+  flex-wrap: wrap;
+  border-radius: 7px;
+}
+.repo {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  gap: 30px;
+  border-radius: 7px;
+  padding: 30px;
+  margin: 20px auto;
+  width: 300px;
+  height: 130px;
+  background-color: var(--main-bg-color);
+}
+.repo-title {
+  color: #fff;
+
+  width: 100%;
+}
+.repo-title h1 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #fff;
+  background-color: transparent;
+  font-size: 15px;
+}
+.repo-info {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.repo-info .size {
+  font-size: 14px;
+}
+.info-t {
+  font-size: 12px;
+  display: flex;
+}
+.info-type {
+  margin-right: 10px;
+}
