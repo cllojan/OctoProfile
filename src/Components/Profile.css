@@ -50,7 +50,7 @@
   margin-top: 20px;
   width: 90%;
   display: flex;
-
+  margin-bottom: 40px;
   flex-wrap: wrap;
   border-radius: 7px;
 }
@@ -68,7 +68,9 @@
 }
 .repo-title {
   color: #fff;
-
+  display: flex;
+  justify-content: start;
+  align-items: center;
   width: 100%;
 }
 .repo-title h1 {
@@ -78,6 +80,15 @@
   color: #fff;
   background-color: transparent;
   font-size: 15px;
+}
+.repoicon{
+  margin-right: 13px;
+}
+.public{
+  padding: 4px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  margin-left: auto;
 }
 .repo-info {
   color: #fff;

@@ -10,7 +10,10 @@
   box-sizing: border-box;
   font-family: "JetBrains Mono", sans-serif;
 }
-
+body{
+  
+  background-color: var(--main-bg-color);
+}
 .App {
   width: 100%;
 
@@ -39,7 +42,7 @@
 
   width: 450px;
   height: 40px;
-
+  top: 220px;
   bottom: 310px;
   color: #fff;
   background: #c0392b;
@@ -73,7 +76,7 @@
   justify-content: space-around;
   border-radius: 7px;
   margin: 30px;
-  width: 100%;
+  width: 97%;
   height: 40px;
   background-color: var(--second-color);
 }

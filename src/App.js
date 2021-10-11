@@ -4,19 +4,22 @@ import "./App.css";
 import Profile from "./Components/Profile";
 
 function App() {
+ 
   const [listen, setListen] = useState("");
-  const [user, setUser] = useState("");
+  const [user, setUser] = useState("Octocat");
   const [userState, setUserState] = useState(user);
   const [display, setDisplay] = useState("none");
 
   const handleChangeInput = (e) => {
     if (e.key === "Enter") {
       setUser(e.target.value);
+      
     }
   };
 
   const handleChange = (e) => {
     setListen(e.target.value);
+    setDisplay("none");
   };
   const handleChangeButton = (e) => {
     e.preventDefault();
@@ -28,6 +31,7 @@ function App() {
     } else {
       setUser(listen);
       setDisplay("none");
+      
     }
   };
   useEffect(() => {
