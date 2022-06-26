@@ -10,8 +10,7 @@
   box-sizing: border-box;
   font-family: "JetBrains Mono", sans-serif;
 }
-body{
-  
+body {
   background-color: var(--main-bg-color);
 }
 .App {
@@ -25,6 +24,7 @@ body{
 }
 
 .App-header {
+  width:100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -71,6 +71,7 @@ body{
   font-size: 70px;
 }
 .cont-search {
+  width:1rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -111,4 +112,10 @@ body{
   width: 280px;
   height: 40px;
   background-color: var(--second-color);
+}
+
+@media (max-width: 500px) {
+  .cont-search{
+    justify-content:space-evenly;
+  }
 }

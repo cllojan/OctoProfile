@@ -21,6 +21,9 @@
 .user-loc {
   margin-top: 10px;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 55px;
 }
 
@@ -46,12 +49,13 @@
 }
 
 .cont-repos {
-  background-color: var(--second-color);
   margin-top: 20px;
   width: 90%;
   display: flex;
   margin-bottom: 40px;
   flex-wrap: wrap;
+  gap: 4px;
+
   border-radius: 7px;
 }
 .repo {
@@ -64,7 +68,7 @@
   margin: 20px auto;
   width: 300px;
   height: 130px;
-  background-color: var(--main-bg-color);
+  background-color: var(--second-color);
 }
 .repo-title {
   color: #fff;
@@ -81,10 +85,10 @@
   background-color: transparent;
   font-size: 15px;
 }
-.repoicon{
+.repoicon {
   margin-right: 13px;
 }
-.public{
+.public {
   padding: 4px;
   border-radius: 30px;
   border: 1px solid #fff;
@@ -104,4 +108,16 @@
 }
 .info-type {
   margin-right: 10px;
+}
+@media (max-width: 500px) {
+  .user-loc {
+    gap: 10px;
+  }
+  .user-fav {
+    width: 90%;
+  }
+  .repo {
+    margin:5px auto;
+    width:95%;
+  }
 }
